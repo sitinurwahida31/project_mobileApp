@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyCanteen">
-        <activity android:name=".Nomeja"></activity>
+        <activity android:name=".Home"></activity>
+        <activity android:name=".Nomeja" />
         <activity android:name=".SplashScreen2" />
         <activity android:name=".SplashScreen" />
         <activity

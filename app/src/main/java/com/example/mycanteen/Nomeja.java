@@ -15,8 +15,9 @@ public class Nomeja extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nomeja);
     }
-    public void btn_login(View view) {
-        Intent intent = new Intent(Nomeja.this, SplashScreen.class);
+
+    public void next(View view) {
+        Intent intent = new Intent(Nomeja.this, Home.class);
         startActivity(intent);
     }
 }
