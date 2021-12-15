@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.mycanteen">
 
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,10 +11,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyCanteen">
-        <activity android:name=".Home"></activity>
+        <activity android:name=".Menu"></activity>
+        <activity android:name=".Checkeout" />
+        <activity android:name=".Food" />
+        <activity android:name=".Home" />
         <activity android:name=".Nomeja" />
         <activity android:name=".SplashScreen2" />
         <activity android:name=".SplashScreen" />
+        <activity android:name="scannerView"/>
+
         <activity
             android:name=".SignUp"
             android:label="SignUp"

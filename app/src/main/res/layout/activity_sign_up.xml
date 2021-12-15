@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    android:background="@color/teal_700"
+    android:background="@color/color_red"
     tools:context=".SignUp">
 
     <LinearLayout
@@ -28,61 +28,53 @@
             android:textSize="20dp"
             android:textColor="@color/black"
             android:gravity="center_horizontal"
-            android:paddingBottom="55dp"
             android:textStyle="bold"
-            />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Firs Name "
+            android:paddingTop="25dp"
+            android:layout_marginBottom="60dp"
 
             />
 
         <EditText
+            android:id="@+id/editText_usernameRegist"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Last Name"
-            />
+            android:hint="username"
+            android:layout_marginBottom="10dp" />
 
         <EditText
+            android:id="@+id/editText_passwordRegist"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Email"
-            />
-        <EditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:hint="password"
             android:inputType="textPassword"
-            />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Password "
+            android:layout_marginBottom="10dp"
             />
 
         <EditText
+            android:id="@+id/editText_passwordConfSignUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:hint="password confirmation"
+            android:inputType="textPassword"
+            android:layout_marginBottom="50dp"
             />
 
         <Button
-            android:id="@+id/btn_SignUp"
-            android:layout_width="match_parent"
+            android:id="@+id/btn_loginSignUp"
+            android:layout_width="218dp"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/color_red"/>
+
+        <Button
+            android:id="@+id/btn_registerSignUp"
+            android:layout_width="217dp"
             android:layout_height="wrap_content"
             android:text="Sign Up"
             android:textColor="@color/white"
-            android:onClick="btn_SignUp"
+            android:backgroundTint="@color/color_red"/>
 
-            />
     </LinearLayout>
 
 </LinearLayout>

@@ -10,7 +10,7 @@ public class SplashScreen extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_splash_screen2);
+        setContentView(R.layout.activity_splash_screen);
         SplashScreen();
 
     }
@@ -19,7 +19,7 @@ public class SplashScreen extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent moveSecond = new Intent(SplashScreen.this, SplashScreen2.class);
+                Intent moveSecond = new Intent(SplashScreen.this, Home.class);
                 startActivity(moveSecond);
                 finish();
             }
